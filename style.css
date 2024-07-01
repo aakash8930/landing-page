@@ -183,7 +183,7 @@ header h1 img {
     font-style: normal;
 }
 
-#explore-btn{
+#explore-btn {
     margin-top: 30px;
     padding: 15px;
     border-radius: 5px;
@@ -192,3 +192,72 @@ header h1 img {
     cursor: pointer;
 }
 
+
+@media screen and (max-width: 320px) {
+    body {
+        background: url(image/Backgroound.jpg);
+        background-repeat: no-repeat;
+        background-size: 510vw 500vw;
+    }
+
+    header {
+        background-color: #091242;
+        color: white;
+        padding: 0 20vw;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 380vw;
+
+    }
+
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        background: rgba(9, 18, 66, 0.25);
+        height: 50px;
+        width: 380vw;
+        padding: 0 20vw;
+        align-items: center;
+
+    }
+
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        margin-left: 135vw;
+    }
+
+
+    #request-qoute-btn {
+        background: white;
+        padding: 16px;
+        border: none;
+        margin-left: 22vw;
+        font-size: 11px;
+        font-weight: 600;
+        font-family: "Merienda", cursive;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+
+    .content {
+        margin: 300px 0 0 170px;
+        color: white;
+        width: 185vw;
+        /* height: 50vw; */
+    }
+
+    .content h6{
+        margin-bottom: 5vw;
+    }
+
+    .content h1{
+        margin-bottom: 10vw;
+    }
+
+}
