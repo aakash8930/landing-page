@@ -6,6 +6,7 @@
 
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -129,12 +130,17 @@ header h1 img {
 .icons li {
     list-style: none;
     padding: 10px;
+    
+}
+
+.icons li i{
+    cursor: pointer;
 }
 
 
 #request-qoute-btn {
     background: white;
-    padding: 16px;
+    padding: 17px 16px;
     border: none;
     margin-left: 2vw;
     font-size: 11px;
@@ -142,6 +148,7 @@ header h1 img {
     font-family: "Merienda", cursive;
     font-optical-sizing: auto;
     font-style: normal;
+    cursor: pointer;
 }
 
 .content {
@@ -189,75 +196,158 @@ header h1 img {
     border-radius: 5px;
     border: none;
     background: linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
     cursor: pointer;
 }
 
+.about {
+    display: flex;
+    flex-direction: row;
+    /* padding: 0 160px; */
+    width: 80vw;
+    margin: 200px 0 100px 170px;
 
-@media screen and (max-width: 320px) {
-    body {
-        background: url(image/Backgroound.jpg);
-        background-repeat: no-repeat;
-        background-size: 510vw 500vw;
-    }
+}
 
-    header {
-        background-color: #091242;
-        color: white;
-        padding: 0 20vw;
-        height: 100px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 380vw;
+.about img {
+    width: 450px;
+}
 
-    }
+#about-desc {
+    width: 40vw;
+    margin-left: 100px;
+}
+
+#about-desc h6 {
+    border-left: 3px solid;
+    margin: 0px 0 0px 6px;
+    padding: 0 0 0 5px;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#about-desc h1 {
+    margin: 5px 0 20px 0;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: "Sansita", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#about-desc p {
+    font-size: 15px;
+    margin: 15px 0 15px 4px;
+    font-optical-sizing: auto;
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#button-column {
+    display: flex;
+    flex-direction: row;
+}
+
+#button-column .animation {
+    position: absolute;
+    height: 38px;
+    top: 1035px;
+    z-index: 0;
+    background: linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
+    color: white;
+    width: 99px;
+    right: 695px;
+}
+
+#button-column button {
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+    border: 2px solid#091242;
+    background: transparent;
+    /* width: 105px; */
+    font-size: 11px;
+    font-weight: 600;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#about-desc button:nth-child(1) {
+    padding: 10px;
+    margin: 0 20px 0 5px;
+
+}
 
 
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        background: rgba(9, 18, 66, 0.25);
-        height: 50px;
-        width: 380vw;
-        padding: 0 20vw;
-        align-items: center;
-
-    }
+#button-column .start-approach,
+#about-desc button:nth-child(1):hover~.animation {
+    width: 99px;
+    right: 695px;
+}
 
 
-    .icons {
-        display: flex;
-        flex-direction: row;
-        margin-left: 135vw;
-    }
+#about-desc button:nth-child(2) {
+    padding: 10px;
+    width: 105px;
+    margin: 0 20px 0 0;
+}
+
+#about-desc button:nth-child(2):hover {
+    color: white;
+}
+
+#button-column .start-approach,
+#about-desc button:nth-child(2):hover~.animation {
+    width: 103px;
+    right: 570px;
 
 
-    #request-qoute-btn {
-        background: white;
-        padding: 16px;
-        border: none;
-        margin-left: 22vw;
-        font-size: 11px;
-        font-weight: 600;
-        font-family: "Merienda", cursive;
-        font-optical-sizing: auto;
-        font-style: normal;
-    }
+}
+
+#about-desc button:nth-child(3) {
+    padding: 10px;
+    margin: 0 20px 0 0;
+
+}
 
 
-    .content {
-        margin: 300px 0 0 170px;
-        color: white;
-        width: 185vw;
-        /* height: 50vw; */
-    }
+#about-desc button:nth-child(3):hover {
+    color: white;
+}
 
-    .content h6{
-        margin-bottom: 5vw;
-    }
+#button-column .start-approach,
+#about-desc button:nth-child(3):hover~.animation {
+    width: 94px;
+    right: 455px;
 
-    .content h1{
-        margin-bottom: 10vw;
-    }
+}
+
+#about-desc button:nth-child(4) {
+    padding: 10px;
+    position: relative;
+    right: 360px;
+    top: 130px;
+
+}
+
+#about-desc button:nth-child(4):hover {
+    color: white;
+}
+
+#button-column .start-approach,
+#about-desc button:nth-child(4):hover~.animation {
+    width: 84px;
+    right: 709px;
+    top: 1164px;
+
 
 }
